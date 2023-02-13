@@ -15,15 +15,16 @@ var discount = 0;
 if (totalDays >= 7) {
     discount = 50;
     totalCost -= discount;
-    console.log("Total cost is $", totalCost);
+    
 }
 else if (totalDays >= 3) {
     discount = 20;
     totalCost -= discount;
-    console.log("Total cost is $", totalCost);
+   
 }
 else {
     discount = 0;
     totalCost -= discount;
-    console.log("Total cost is ", totalCost);
+    
 }
+ console.log("Total cost is $", totalCost);
