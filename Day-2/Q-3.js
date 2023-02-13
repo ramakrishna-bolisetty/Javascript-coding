@@ -16,8 +16,8 @@
 
 function partitionOn(pred, items) {
  
-    var falseItems=items.filter(function(item){return !pred(item)});
-    var trueItems=items.filter(function (item){return pred(item)});
+    var falseItems=items.filter((item)=> !pred(item));
+    var trueItems=items.filter((item)=>pred(item));
     var index=0;
     items.length=0;
     for(index=0;index<falseItems.length;index++){
