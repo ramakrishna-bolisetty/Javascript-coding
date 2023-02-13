@@ -4,7 +4,7 @@
 // three(); // returns 3
 
 var three=function always (n) {
-    var fun=()=>n;
+    const fun=()=>n;
     return fun();
   }
 
