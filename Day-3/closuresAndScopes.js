@@ -7,7 +7,7 @@
 // callbacks[3](); // must return 3
 
 function createFunctions(n) {
-    cosnt callbacks = [];
+    const callbacks = [];
   
     for (let i=0; i<n; i++) {
       callbacks.push(()=>i);
