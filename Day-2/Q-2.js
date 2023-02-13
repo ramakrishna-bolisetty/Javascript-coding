@@ -9,7 +9,7 @@
 // Kata.getMiddle("middle") should return "dd"
 
 
-function getMiddle(s)
+var getMiddle=(s)
 {
   let length=s.length;
   let middle=length/2;
