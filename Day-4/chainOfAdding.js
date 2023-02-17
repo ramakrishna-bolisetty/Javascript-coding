@@ -13,13 +13,19 @@
 // addTwo(3); // == 5
 // addTwo(3)(5); // == 10
 
-function add(n){
-      // Let the curryig begin!
-        function resultFn(y){
-            return add(n+y);
-        }
-        resultFn.valueOf = function(){
-                return n;
-            };
-        return resultFn;
+function add(n) {
+    // Let the curryig begin!
+  
+    function resultFn(y) {
+        if(y!=undefined)
+        return add(n + y);
+        // else return n;
     }
+    resultFn.valueOf = function () {
+        return n;
+    };
+    return resultFn;
+}
+
+console.log(add(add(1)(2)(3))(3).valueOf());
+
