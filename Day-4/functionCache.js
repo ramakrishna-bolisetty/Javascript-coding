@@ -25,3 +25,8 @@ const cache = (func) => {
     return result;
   }
 }
+
+const concat=(s1,s2)=>s1+s2;
+const cachedFunction=cache(concat);
+console.log(cachedFunction("ra","ma")); //rama 
+console.log(cachedFunction("ra","ma")); //rama
