@@ -20,12 +20,12 @@ const addition = (n) => {
         else
             return n;
     }
-    innerFun.valueOf =  ()=> {
+    innerFun.valueOf = ()=> {
         return n;
     }
     return innerFun;
 }
 
-const result=addition(1)(2)(3);
+const result = addition(1)(2)(3);
 console.log(result.valueOf()); // 6
 
