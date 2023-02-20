@@ -13,10 +13,8 @@ const createSecretHolder = (secret) => {
   let _secret = secret;
   return {
     getSecret: () => _secret,
-    setSecret: (newSecret) => {
-      _secret = newSecret;
-    },
-  };
+    setSecret: (newSecret) => { _secret = newSecret; }
+  }
 }
 
 const obj = createSecretHolder(5);
