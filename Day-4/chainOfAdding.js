@@ -22,7 +22,7 @@ const addition = (n) => {
     }
     innerFun.valueOf =  ()=> {
         return n;
-    };
+    }
     return innerFun;
 }
 
